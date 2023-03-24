@@ -1,0 +1,9 @@
+FROM centos:latest
+
+WORKDIR /app
+
+COPY . /app
+
+EXPOSE 5005
+
+CMD ["./dist/centos/app_centos"]

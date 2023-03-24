@@ -1,0 +1,9 @@
+FROM ubuntu:latest
+
+WORKDIR /app
+
+COPY .	/app
+
+EXPOSE 5000
+
+CMD ["./dist/app"]
